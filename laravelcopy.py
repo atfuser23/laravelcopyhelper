@@ -2,7 +2,12 @@
 
 import shutil, os, sys, getopt
 
-        
+def friendlyCopy(func, _from, _to):
+    try:
+        func(_from, _to)
+    except:
+        pass
+    
 def main(argv):
     filename = os.path.basename(__file__)
     
@@ -56,7 +61,7 @@ def main(argv):
                     pass
                 
                 print "[+] Coping %s" % path
-                shutil.copy(path, to_dir)
+                friendlyCopy(shutil.copy, path, to_dir)
         else:
             if item in folders:
                 _to_path = os.path.join(to_dir, item)
@@ -68,7 +73,7 @@ def main(argv):
                     pass
                 
                 print "[+] Coping %s" % path
-                shutil.copytree(path, _to_path)
+                friendlyCopy(shutil.copy, path, _to_path)
 
     print "[+] Done!"
     
