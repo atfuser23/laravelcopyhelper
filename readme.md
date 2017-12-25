@@ -22,13 +22,13 @@ of the laravel project.
     > python laravelcopy.py -i /var/www/mylaravelsite -o /var/www/laravel -r 
     ["app","database","routes"] -g [".env"]
 	[-] Deleting /var/www/laravel/.env
-	[+] Coping /var/www/mylaravelsite/.env
+	[+] Copying /var/www/mylaravelsite/.env
 	[-] Deleting /var/www/laravel/app
-	[+] Coping /var/www/mylaravelsite/app
+	[+] Copying /var/www/mylaravelsite/app
 	[-] Deleting /var/www/laravel/database
-	[+] Coping /var/www/mylaravelsite/database
+	[+] Copying /var/www/mylaravelsite/database
 	[-] Deleting /var/www/laravel/routes
-	[+] Coping /var/www/mylaravelsite/routes
+	[+] Copying /var/www/mylaravelsite/routes
 	[+] Done!
 	>
 	> 

@@ -60,7 +60,7 @@ def main(argv):
                 except:
                     pass
                 
-                print "[+] Coping %s" % path
+                print "[+] Copying %s" % path
                 friendlyCopy(shutil.copy, path, to_dir)
         else:
             if item in folders:
@@ -72,7 +72,7 @@ def main(argv):
                 except:
                     pass
                 
-                print "[+] Coping %s" % path
+                print "[+] Copying %s" % path
                 friendlyCopy(shutil.copy, path, _to_path)
 
     print "[+] Done!"
